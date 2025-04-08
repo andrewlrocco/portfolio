@@ -2,30 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GitHub Pages Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Jane Doe</h1>
+    <p>Engineer | Developer | Problem Solver</p>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li><a href="#" data-tab="projects" class="active">Projects</a></li>
+        <li><a href="#" data-tab="resume">Resume</a></li>
+        <li><a href="#" data-tab="contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Hello, World!</h2>
-      <p>This is a simple website hosted on GitHub Pages.</p>
-      <button id="clickMe">Click Me</button>
+    <section id="projects" class="tab-content active">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Wireless Sensor Node</h3>
+        <p>Designed a low-power wireless energy harvesting sensor node using LoRa and custom PCB.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal website built using HTML, CSS, and JavaScript. Hosted on GitHub Pages.</p>
+      </div>
+    </section>
+
+    <section id="resume" class="tab-content">
+      <h2>Resume</h2>
+      <p>Download my resume <a href="resume.pdf" target="_blank">here</a>.</p>
+      <ul>
+        <li><strong>Education:</strong> B.S. in Electrical Engineering, XYZ University</li>
+        <li><strong>Skills:</strong> PCB Design, Python, C++, Embedded Systems, LoRa, BLE</li>
+        <li><strong>Experience:</strong> Intern at ABC Corp - Hardware Systems Engineering</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="tab-content">
+      <h2>Contact Info</h2>
+      <p><strong>Email:</strong> jane.doe@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/janedoe" target="_blank">github.com/janedoe</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/janedoe" target="_blank">linkedin.com/in/janedoe</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 My GitHub Site</p>
+    <p>&copy; 2025 Jane Doe</p>
   </footer>
 
   <script src="script.js"></script>
