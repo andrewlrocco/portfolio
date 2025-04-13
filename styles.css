@@ -25,7 +25,7 @@
   
   /* Header */
   header {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background-image:url("images/header-background.jpg");
     color: white;
     text-align: center;
     padding: 60px 20px;
