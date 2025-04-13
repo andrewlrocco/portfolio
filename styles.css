@@ -25,8 +25,8 @@
   
   /* Header */
   header {
+    width:100%;
     background-image:url("images/header-background.jpg");
-    color: white;
     text-align: center;
     padding: 60px 20px;
     border-bottom-left-radius: var(--border-radius);
