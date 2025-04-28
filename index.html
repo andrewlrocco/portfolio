@@ -8,10 +8,10 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Your Name</h1>
+    <div class="container nav-container">
+      <h1 class="logo">YourName</h1>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -20,51 +20,57 @@
     </div>
   </header>
 
-  <section id="hero">
-    <div class="container">
-      <h2>Hi, I'm Your Name</h2>
-      <p>A passionate developer building impactful projects.</p>
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Hello, I'm <span>Your Name</span>.</h2>
+      <p>I build modern web applications and design elegant solutions.</p>
+      <a href="#projects" class="btn">View Projects</a>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
           <h3>Project One</h3>
-          <p>Brief description of your project.</p>
+          <p>Short description of the project and its impact.</p>
         </div>
-        <div class="project">
+        <div class="card">
           <h3>Project Two</h3>
-          <p>Brief description of your project.</p>
+          <p>Short description of another project, focusing on results.</p>
+        </div>
+        <div class="card">
+          <h3>Project Three</h3>
+          <p>Another brief description highlighting skills used.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="resume">
+  <section id="resume" class="section bg-light">
     <div class="container">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
+      <h2 class="section-title">Resume</h2>
+      <p>Download my latest resume to learn more about my experience and skills.</p>
+      <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <div class="container">
-      <h2>Contact</h2>
-      <form id="contact-form">
+      <h2 class="section-title">Contact</h2>
+      <form id="contact-form" class="form">
         <input type="text" id="name" name="name" placeholder="Your Name" required>
         <input type="email" id="email" name="email" placeholder="Your Email" required>
         <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2025 Your Name</p>
+      <p>© 2025 Your Name. All rights reserved.</p>
     </div>
   </footer>
 
