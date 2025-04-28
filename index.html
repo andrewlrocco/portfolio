@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Andrew Rocco</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero-header">
-    <div class="overlay">
-      <h1>Andrew Leo Rocco</h1>
-      <p>Hardware Engineer | Embedded Systems | PCB Designer</p>
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#" class="active" data-tab="projects">Projects</a></li>
-      <li><a href="#" data-tab="resume">Resume</a></li>
-      <li><a href="#" data-tab="contact">Contact</a></li>
-    </ul>
-  </nav>
+  <section id="hero">
+    <div class="container">
+      <h2>Hi, I'm Your Name</h2>
+      <p>A passionate developer building impactful projects.</p>
+    </div>
+  </section>
 
-  <main>
-    <section id="projects" class="tab-content active">
+  <section id="projects">
+    <div class="container">
       <h2>Projects</h2>
-      <div class="card">
-        <h3>Wireless Sensor Node</h3>
-        <p>Designed a solar-powered sensor node using LoRa and a custom PCB, optimized for ultra-low power operation.</p>
+      <div class="project-list">
+        <div class="project">
+          <h3>Project One</h3>
+          <p>Brief description of your project.</p>
+        </div>
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>Brief description of your project.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>High-Speed Data Logger</h3>
-        <p>Built a microcontroller-based high-speed data logger with SD card storage and USB-C interface.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="resume" class="tab-content">
+  <section id="resume">
+    <div class="container">
       <h2>Resume</h2>
       <p><a href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
-      <ul>
-        <li><strong>Education:</strong> M.S. in Electrical & Computer Engineering, Georgia Institute of Technology</li>
-        <li><strong>Experience:</strong> Embedded Systems Intern at ABC Corp</li>
-        <li><strong>Skills:</strong> PCB design, Embedded C, RF design, Signal Integrity, KiCad, Altium</li>
-      </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="tab-content">
+  <section id="contact">
+    <div class="container">
       <h2>Contact</h2>
-      <p><strong>Email:</strong> andrewrocco27@gmail.com</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/andrewlrocco" target="_blank">github.com/andrewlrocco</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/andrewlrocco" target="_blank">linkedin.com/in/andrewlrocco</a></p>
-    </section>
-  </main>
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Andrew Rocco. Built with love and low noise floors.</p>
+    <div class="container">
+      <p>© 2025 Your Name</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
